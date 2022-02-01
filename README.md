@@ -2,8 +2,6 @@
 
 Web Application where users can authenticate (signup/login) and request taxis, the system asigns the closest available taxi, and admins can authenticate and validate/cancel each trip.
 
-Demo: https://despachostaxisapp.herokuapp.com
-
 Steps:
 
 Run npm install to get all dependencies for the project.

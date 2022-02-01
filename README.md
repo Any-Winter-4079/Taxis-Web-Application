@@ -10,17 +10,12 @@ Run npm install to get all dependencies for the project.
 
 Create a .env file including your credentials:
 
-SESSION_SECRET=xxx
-
-MONGODB_URI=xxx
-
-ADMIN_EMAIL=xxx
-
-EMAIL_PWD=xxx
-
-POSITIONSTACK_API_KEY=xxx
-
-BASE_URL=xxx
+* SESSION_SECRET=xxx
+* MONGODB_URI=xxx
+* ADMIN_EMAIL=xxx
+* EMAIL_PWD=xxx
+* POSITIONSTACK_API_KEY=xxx
+* BASE_URL=xxx
 
 Make sure to allow 'Less secure apps' on your email account if you use Google's Gmail.
 

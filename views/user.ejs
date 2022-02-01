@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho Taxi App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/axios.js"></script>
+    <script src="js/user.js"></script>
+
+</head>
+
+<body>
+    <div class="navbar">
+        <span><a href="/"><img id="logo" src="images/min/logo-min.png" alt=""></a></span>
+        <span>Hola, usuario</span>
+    </div>
+    <div class="container">
+        <div class="ai-driving">
+            <img src="../images/min/autonomous-driving-min.jpeg">
+            <div class="ai-driving-description">
+                <h1>Pide tu primer<br> smart cab</h1>
+                <p>Disfruta de comodidad y elegancia en nuestros taxis con conducción autónoma.</p>
+                <p>Por favor, haz uso de la mascarilla dentro del vehículo. Asegúrate de que la matrícula coincide
+                    con la mostrada al asignar su taxi.
+                </p>
+                <a href="#data">
+                    <button>Pide tu smart cab hoy</button>
+                </a>
+            </div>
+        </div>
+        <div class="taxi-service">
+            <div class="taxi-service-request">
+                <h3 id="data">Introduce tus datos y te asignaremos el taxi más cercano.</h3>
+                <form class="address-form" id="taxi-request-form">
+                    <label>Dirección de origen:</label>
+                    <input id="origin" type="text" name="origin" value="" placeholder="Tomillo 4, 28668 Alcorcón">
+                    <label>Dirección de destino:</label>
+                    <input id="destination" type="text" name="destination" value="" placeholder="Pº Juan XXIII, 11 28040 Madrid">
+                    <label>Fecha del viaje:</label>
+                    <input id="date" type="text" name="date" value="" placeholder="10/02/2022">
+                    <label>Hora de salida:</label>
+                    <input id="time" type="text" name="time" value="" placeholder="17:50">
+                </form>
+                <button id="taxi-request">Pedir viaje</button>
+            </div>
+            <img src="../images/min/taxi-service-min.jpeg">
+        </div>
+    </div>
+</body>
+</html>

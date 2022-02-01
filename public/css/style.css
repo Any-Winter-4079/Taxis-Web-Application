@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #2b033c;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+*:focus {
+  outline: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #1d0025;
+  margin-bottom: 30px;
+}
+.navbar span {
+  margin: 0 5vw;
+}
+.navbar span a {
+  color: white;
+  text-decoration: none;
+}
+.container {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+}
+.ai-driving {
+  display: flex;
+  justify-content: space-between;
+}
+.ai-driving img {
+  position: relative;
+  left: min(3vw, 80px);
+  width: 50vw;
+  height: 100%;
+  max-width: 550px;
+}
+.ai-driving .ai-driving-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  right: min(3vw, 80px);
+  top: -15px;
+  width: 35vw;
+  max-width: 450px;
+}
+.ai-driving .ai-driving-description h1 {
+  text-align: left;
+  color: #fdf9eb;
+  font-size: 36px;
+  font-weight: 400;
+}
+.ai-driving .ai-driving-description p {
+  font-weight: 300;
+  width: 90%;
+  line-height: 20px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, #1bcacd, #15a7d6);
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  padding: 9px;
+}
+.taxi-service {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vh;
+}
+.admin-taxi {
+  margin-top: 3vh;
+}
+.taxi-service .taxi-service-request,
+.taxi-service .taxi-service-fleet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: min(3vw, 80px);
+  width: 35vw;
+  max-width: 450px;
+  text-align: center;
+}
+.taxi-service .taxi-service-request h3,
+.taxi-service .taxi-service-fleet h3 {
+  font-weight: 300;
+  font-size: 17px;
+  width: 75%;
+}
+.admin-taxi-service-fleet h3 {
+  width: 100% !important;
+}
+/**/
+.taxi-service .taxi-service-request .address-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.taxi-service .taxi-service-request .address-form * {
+  text-align: left;
+  width: 60%;
+  padding: 6px;
+  margin: 3px 0;
+}
+.taxi-service .taxi-service-request .address-form input::placeholder {
+  color: #343434;
+}
+.taxi-service .taxi-service-request button {
+  margin: 16px 0;
+}
+/**/
+.taxi-service img {
+  position: relative;
+  right: min(3vw, 80px);
+  width: 52vw;
+  max-width: 620px;
+  height: 100%;
+  margin-top: -95px;
+  z-index: -1;
+}
+@media (max-width: 960px) {
+  .ai-driving {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ai-driving img {
+    left: 0;
+    width: 100vw;
+    height: 100%;
+  }
+  .ai-driving .ai-driving-description {
+    align-items: center;
+    right: 0;
+    width: 100vw;
+  }
+  .ai-driving .ai-driving-description h1 {
+    text-align: center;
+  }
+  .ai-driving .ai-driving-description p {
+    text-align: center;
+  }
+  .taxi-service {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+  }
+  .taxi-service .taxi-service-request,
+  .taxi-service .taxi-service-fleet {
+    left: 0;
+    width: 100vw;
+  }
+  .taxi-service .taxi-service-request h3,
+  .taxi-service .taxi-service-fleet h3 {
+    width: 90%;
+  }
+  .taxi-service img {
+    right: 0;
+    top: -125px;
+    margin-bottom: -125px;
+    width: 90vw;
+    max-width: 520px;
+    height: 100%;
+    margin-top: 0;
+  }
+}
+.admin-taxi-service-fleet {
+  margin-left: 30px;
+}
+.admin-ai-driving-description {
+  position: relative;
+  top: 20px !important;
+}
+.accordion-container,
+.taxi-user-assignments-container {
+  max-width: 367px;
+}
+@media (max-width: 480px) {
+  .taxi-service img {
+    top: -75px;
+    margin-bottom: -75px;
+    height: 100%;
+  }
+}
+.taxi-user-assignment-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.taxi-user-assignment-navigation {
+  display: flex;
+}
+.accordion-header,
+.taxi-user-assignments-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  background-color: #1c0023;
+  color: #00a9b8 !important;
+  font-weight: 500;
+  text-align: center;
+}
+.taxi-accordion-header {
+  cursor: pointer;
+}
+.accordion-header span,
+.taxi-user-assignments-header span {
+  padding: 0 10px;
+}
+.taxi-user-assignments-header {
+  margin-left: -18px;
+  width: calc(100% + 36px);
+  left: 0;
+  padding: 8px 0 !important;
+}
+.accordion-collapsible,
+.taxi-user-assignment {
+  text-align: left;
+}
+.arrow {
+  position: relative;
+  top: -2px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+  transition: all 0.5s;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+}
+.info span {
+  margin: 0 2px;
+  padding: 8px 10px;
+  background-color: #1c0023;
+  color: #c1e990;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.pending * {
+  font-size: 15px;
+  cursor: auto !important;
+}
+.taxi-user-assignment-navigation .info span {
+  padding: 7px 14px;
+}
+.accordion-collapsible-container,
+.taxi-user-assignment-container {
+  padding: 0 18px;
+  font-weight: 300;
+  box-shadow: rgba(32, 32, 32, 1) 0px 2px 8px 0px;
+  padding-bottom: 8px;
+}
+.taxi-user-assignment-container {
+  padding-bottom: 0;
+}
+.accordion-collapsible .accordion-collapsible-container div,
+.taxi-user-assignment .taxi-user-assignment-container div {
+  padding: 6px 0;
+  color: #ccd5d6;
+}
+.metric-title {
+  font-weight: 400;
+  color: white;
+}
+.taxi-confirmation {
+  display: flex;
+  justify-content: center;
+}
+.taxi-confirmation button {
+  margin: 10px 6px;
+  padding: 9px 20px;
+}
+@media (max-width: 280px) {
+  .taxi-confirmation button {
+    margin: 2vw;
+    padding: 3.5vw 4.5vw;
+  }
+}
+#reject-taxi {
+  background-image: linear-gradient(to right, #e96560, #e0134a);
+}
+.accordion-header[aria-expanded="false"] + .accordion-collapsible {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.6s;
+}
+.accordion-header[aria-expanded="true"] + .accordion-collapsible {
+  max-height: 35vh;
+  opacity: 1;
+  transition: all 0.6s;
+}
+.numbers {
+  display: flex;
+  margin-top: 15px;
+}
+.numbers div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #1c0023;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+  background-color: #1bcacd;
+  border-radius: 50%;
+}
+.numbers .active {
+  background-color: #c0d678;
+  font-weight: 600;
+}
+.status {
+  transition: all 0.6s;
+  opacity: 0;
+}
+.available {
+  color: #b4d190;
+}
+.occupied {
+  color: #d84e4a;
+}
+@media (max-width: 960px) {
+  .admin-taxi-service-fleet {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .admin-taxi-service-img {
+    margin-top: 30px;
+  }
+  .admin-ai-driving-description {
+    position: relative;
+    top: -15px !important;
+  }
+}
+/**/
+.background {
+  position: absolute;
+}
+.background .city {
+  width: 100vw;
+}
+.background .logo {
+  position: absolute;
+  top: 7vw;
+  z-index: 2;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.background .logo #logo {
+  width: 355px;
+}
+.navbar #logo {
+  padding-top: 5px;
+  width: 135px;
+}
+.user-data {
+  position: absolute;
+  top: 24.5vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+.user-data .toggle {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #5dc1ca;
+  width: 180px;
+  margin-bottom: 12px;
+}
+.user-data .toggle a {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px 5px 15px;
+  cursor: pointer;
+}
+.user-data .toggle .active {
+  color: #5dc1ca;
+}
+.hidden {
+  display: none !important;
+}
+@media (max-width: 960px) {
+  .center960 {
+    text-align: center;
+  }
+}
+.user-data form {
+  display: flex;
+  flex-direction: column;
+  width: 305px;
+  margin: auto;
+}
+.user-data form * {
+  margin: 4px 0;
+}
+.user-data form input {
+  padding: 6px;
+  transition: background-color 0.1s linear;
+}
+form .error {
+  background-color: #e4407c;
+  border-width: 1.75px;
+  border-style: inset outset outset inset;
+  border-color: #c82360;
+  border-radius: 3px;
+}
+form .error::placeholder {
+  color: #121213 !important;
+}
+form input:focus {
+  background-color: white;
+  border-color: #eee;
+  transition: background-color 0.1s linear;
+}
+.user-data form input:last-child {
+  margin-bottom: 25px;
+}
+@media (max-width: 960px) {
+  .background .logo #logo {
+    width: max(32vw, 130px);
+  }
+  .navbar #logo {
+    width: 127px;
+  }
+}
+@media (max-width: 380px) {
+  .user-data form {
+    width: 80vw;
+  }
+}
+/**/
+.map-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100vw;
+  height: 250px;
+  overflow-x: hidden;
+}
+.map-background #map {
+  position: absolute;
+  top: 0;
+  height: inherit;
+  opacity: 1;
+}
+.map-background .map-overlay {
+  position: absolute;
+  top: 0;
+  background: radial-gradient(
+    closest-side,
+    rgba(255, 255, 255, 0),
+    #2b033c 100%
+  );
+  height: inherit;
+  width: inherit;
+}
+@media (max-width: 960px) {
+  .map-background {
+    margin-top: 15px;
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .map-background {
+    margin-top: 10px;
+    height: 160px;
+  }
+}

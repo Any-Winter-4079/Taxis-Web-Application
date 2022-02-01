@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho Taxi App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/axios.js"></script>
+    <script src="js/admin.js"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <span><a href="/"><img id="logo" src="images/min/logo-min.png" alt=""></a></span>
+        <span>Hola, admin</span>
+    </div>
+    <div class="container">
+        <div class="ai-driving">
+            <img src="../images/min/autonomous-driving-min.jpeg">
+            <div class="ai-driving-description admin-ai-driving-description">
+                <h1>Monitoriza y <br>gestiona tu flota</h1>
+                <p id="pending-requests">Revisa tus solicitudes pendientes.</p>
+
+                <div class="taxi-user-assignments-container" id="taxi-user-assignments-container">
+                    <div class="taxi-user-assignments-item">
+                        <div class="taxi-user-assignment">
+                            <div class="taxi-user-assignment-container" id=taxi-user-assignment-container>
+                            </div>
+                            <div class="taxi-confirmation">
+                                <button id="reject-taxi">Rechazar</button>
+                                <button id="confirm-taxi">Confirmar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="taxi-service admin-taxi">
+            <div class="taxi-service-fleet admin-taxi-service-fleet">
+                <h3>Revisa el estado de ocupación de los vehículos de tu flota y su ubicación y destino.</h3>
+                <div class="accordion-container" id="accordion-container">
+                </div>
+                <div class="numbers" id="numbers">
+                    <div class="taxi-group active">1</div>
+                    <div class="taxi-group">2</div>
+                    <div class="taxi-group">3</div>
+                    <div class="taxi-group">4</div>
+                    <div class="taxi-group">5</div>
+                    <div class="taxi-group">6</div>
+                </div>
+            </div>
+            <img class="admin-taxi-service-img" src="../images/min/taxi-service-min.jpeg">
+        </div>
+    </div>
+</body>
+</html>

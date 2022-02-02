@@ -1,10 +1,12 @@
 # Taxis-Web-Application
 
-Web Application where users can authenticate (signup/login) and request taxis, the system asigns the closest available taxi, and admins can authenticate and validate/cancel each trip.
+Web Application where users can authenticate (signup/login) and request taxis, the system assigns the closest available taxi, and admins can authenticate and validate/cancel each trip.
 
 Steps:
 
 Run npm install to get all dependencies for the project.
+
+Populate admins and taxis collections (on MongoDB).
 
 Create a .env file including your credentials:
 

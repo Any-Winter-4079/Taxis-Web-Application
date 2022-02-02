@@ -4,9 +4,9 @@ Web Application where users can authenticate (signup/login) and request taxis, t
 
 Steps:
 
-Run npm install to get all dependencies for the project.
+Run npm install to get the dependencies for the project.
 
-Populate admins and taxis collections (on MongoDB).
+Populate admin and taxis collections (on MongoDB).
 
 Create a .env file including your credentials:
 
